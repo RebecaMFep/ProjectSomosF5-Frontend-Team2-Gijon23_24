@@ -150,9 +150,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 55rem;
-  width: 45rem;
-  padding: 20rem;
+  height: 60rem;
+  width: 50rem;
+  padding: 4rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   background-color: white;
@@ -161,7 +161,7 @@ body {
   margin-bottom: 10rem;
 }
 
-@media (max-width: 916px) {
+@media (max-width: 1000px) {
   .modal-container{
     width: 80%;
     
@@ -177,7 +177,7 @@ body {
 h1 {
   font-weight: 600;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   color: $primary-background;
   font-family: "Poppins", sans-serif;
 }

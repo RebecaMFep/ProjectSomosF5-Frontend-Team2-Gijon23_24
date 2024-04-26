@@ -191,7 +191,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20rem;
+  padding: 4rem;
   height: 85rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
@@ -217,7 +217,7 @@ body {
 h1 {
   font-weight: 600;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   color: $primary-background;
   font-family: "Poppins", sans-serif;
 }
