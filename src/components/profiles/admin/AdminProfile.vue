@@ -99,7 +99,9 @@ const cancelData = () => {
 
         <div class="logo-container">
           <img class="image-logo" src="/images/logo.svg" alt="logo-profile">
-          <h2>Bienvenido Andrés</h2>
+          <div class="welcome">
+          <h2>¡Bienvenido Andrés!</h2>
+        </div>
         </div>
 
         <form @submit.prevent="changePassword">
@@ -148,7 +150,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70rem;
+  height: 55rem;
+  width: 45rem;
   padding: 20rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
@@ -168,7 +171,7 @@ body {
 .user-profile {
   display: flex;
   justify-content: center;
-  margin: 20rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
 }
 
 h1 {
@@ -193,10 +196,17 @@ h1 {
 
 }
 
+.welcome {
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+}
+
 h2 {
   font-family: "Poppins", sans-serif;
   color: #3C3057;
   font-size: 3rem;
+
 }
 
 form {
