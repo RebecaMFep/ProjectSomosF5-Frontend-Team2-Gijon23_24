@@ -178,6 +178,7 @@ const cancelData = () => {
 </template>
 
 <style lang="scss" scoped>
+
 body {
   background-color: #CBABE4;
   display: flex;
@@ -192,7 +193,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4rem;
-  height: 85rem;
+  height: 70rem;
+  width: 60;
   border-radius: 1.5rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   background-color: white;
@@ -201,7 +203,7 @@ body {
   margin-bottom: 10rem;
   
 }
-@media (max-width: 916px) {
+@media (max-width: 1000px) {
   .modal-container{
     width: 80%;
     
@@ -211,13 +213,13 @@ body {
 .user-profile {
   display: flex;
   justify-content: center;
-  margin: 20rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
 }
 
 h1 {
   font-weight: 600;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   color: $primary-background;
   font-family: "Poppins", sans-serif;
 }
@@ -227,7 +229,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .image-logo {

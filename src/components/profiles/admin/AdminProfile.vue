@@ -187,7 +187,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
