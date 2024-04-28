@@ -198,9 +198,8 @@ async function deleteProduct(productId) {
             Galería de imágenes
           </label>
           <div class="input-wrapper">
-            <input type="file" class="form-control-file" id="file-upload" name="files" multiple
-              @change="handleFilesChange" />
-            <span class="add-images">+ Añadir imágenes</span>
+            <input type="file" class="form-control-file" id="file-upload" name="selectedFiles" multiple @change="handleFilesChange" />
+            <span class="add-images">+ Añadir imágenes</span> 
           </div>
         </div>
    
@@ -237,7 +236,7 @@ async function deleteProduct(productId) {
 }
 
 .modal_container {
-  height: 60rem;
+  height: 63rem;
   width: 60rem;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -256,7 +255,8 @@ img {
 #button_container {
   width: 100%;
   display: flex;
-  padding: 3rem;
+  padding-right: 1rem;
+  margin-bottom: 6rem;
   justify-content: end;
 }
 
@@ -267,6 +267,7 @@ form {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 3rem;
   padding: 0 2rem 0 2rem;
   border-radius: 1rem;
 }
@@ -365,39 +366,39 @@ select {
   border: 2px solid #422359; 
 }
 
-.images-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 1rem;
-}
+ .images-container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-bottom: 1rem;
+ }
 
-.input-wrapper {
-  position: relative;
-  width: 100%;
-  height: 5rem;
-  background-color: white;
-  border: 2px solid #422359 ;  
-  border-radius: 0.5rem;
-}
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    border: 2px solid #422359 ;  
+    border-radius: 0.5rem;
+  }
 
-.input-wrapper input {
-  position: relative;
-  z-index: 2;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
+  .input-wrapper input {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
 
-.add-images {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.8rem;
-  color: rgb(54, 54, 54);
-}
+  .add-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    color: rgb(54, 54, 54);
+  }
 
 .description-container {
   width: 100%;
@@ -419,7 +420,7 @@ h1 {
   font-size: 4rem;
   font-weight: 500;
   color: #422359;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
 }
@@ -435,6 +436,7 @@ label {
   display: flex;
   justify-content: center;
   gap: 6rem;
+  margin-top: 2rem;
 
   button {
     background-color: $primary-color;
